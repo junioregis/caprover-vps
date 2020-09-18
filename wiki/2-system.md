@@ -1,12 +1,10 @@
-# System
-
-## 1. Set Sudo
+# 2.1. Set Sudo
 
 ```bash
 ssh ubuntu@domain.com -t "sudo sh -c \"echo 'ubuntu ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers\""
 ```
 
-## 2. Install Essentials
+# 2.2. Install Essentials
 
 ```bash
 ssh ubuntu@domain.com -t 'bash -s' < scripts/install.sh
@@ -14,7 +12,7 @@ ssh ubuntu@domain.com -t 'bash -s' < scripts/install.sh
 
 `Wait for system reboot`
 
-## 3. Install CapRover
+# 2.3. Install CapRover
 
 ```bash
 ssh ubuntu@domain.com -t "docker run \
@@ -28,7 +26,7 @@ ssh ubuntu@domain.com -t "docker run \
 
 > In production, remove `MAIN_NODE_IP_ADDRESS='127.0.0.1'` line
 
-## 4. Access
+# 2.4. Access
 
 [http://captain.localhost:3000](http://captain.localhost:3000)
 

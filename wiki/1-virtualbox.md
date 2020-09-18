@@ -1,19 +1,17 @@
-# Virtualbox
-
-## 1. Create Host Network Adapter
+# 1.1. Create Host Network Adapter
 
 `File > Host Network Manager > Create`
 | IPv4 Address | IPv4 Network Mask | DHCP Server |
 |--------------|-------------------|-------------|
 | 192.168.56.1 | 255.255.255.0 | DISABLED |
 
-## 2. Create Virtual Machine
+# 1.2. Create Virtual Machine
 
 | CPU    | RAM     | HD    |
 | ------ | ------- | ----- |
 | 1 Core | 1024 MB | 20 GB |
 
-## 3. Configure Network Adapters
+# 1.3. Configure Network Adapters
 
 Adapter 1:
 
@@ -23,19 +21,19 @@ Adapter 2:
 
 `Virtual Machine -> Settings -> Network -> Adapter 2 > Attached to > Host-only Adapter`
 
-## 4. Download Ubuntu Server Image
+# 1.4. Download Ubuntu Server Image
 
 _Ubuntu 18.04 - 64bit_
 
 [https://ubuntu.com/download/server](https://ubuntu.com/download/server)
 
-## 5. Install SSH
+# 1.5. Install SSH
 
 ```bash
 sudo apt install -y openssh-server
 ```
 
-## 6. Setup Network Interfaces
+# 1.6. Setup Network Interfaces
 
 Edit Networks:
 
@@ -62,7 +60,7 @@ Apply changes:
 sudo netplan apply
 ```
 
-## 7. Set Hosts
+# 1.7. Set Hosts
 
 ```
 127.0.0.1 captain.localhost
