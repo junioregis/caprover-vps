@@ -59,9 +59,3 @@ Apply changes:
 ```bash
 sudo netplan apply
 ```
-
-# 1.7. Set Hosts
-
-```
-127.0.0.1 captain.localhost
-```
